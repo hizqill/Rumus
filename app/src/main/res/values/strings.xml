@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">faa_s_application</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_lebar">LEBAR :</string>
+<string name="lbl_panjang">PANJANG :</string>
+<string name="lbl_tampilan_one">tampilan One</string>
+<string name="msg_check_your_app">"Check your app's UI from the below demo screens of your app."</string>
+<string name="lbl_hitung_luas">HITUNG LUAS</string>
+<string name="lbl_volume">VOLUME :</string>
+<string name="lbl_panjang_rusuk">PANJANG RUSUK :</string>
+<string name="lbl_hitung_volume">HITUNG VOLUME</string>
+<string name="lbl_rumus_balok">rumus balok</string>
+<string name="lbl_tinggi">TINGGI :</string>
+<string name="lbl_iphone_8_one">iPhone 8 - One</string>
+<string name="lbl_rumus_kubus">rumus kubus</string>
+<string name="msg_menghitung_rumu">menghitung rumus</string>
+<string name="lbl_tampilan">tampilan</string>
+<string name="lbl_app_navigation">App Navigation</string>
+<string name="lbl_luas">LUAS :</string>
+</resources>

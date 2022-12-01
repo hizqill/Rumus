@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone8OneVM" type="com.faasapplication.app.modules.iphone8one.data.viewmodel.Iphone8OneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearIPhone8One"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+        <TextView
+            android:id="@+id/txtMenghitungrumus"
+            style="@style/txtIntersemibold32"
+            android:layout_width="333dp"
+            android:layout_height="157dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_94pxh"
+            android:layout_marginTop="@dimen/_119pxv"
+            android:layout_marginEnd="@dimen/_94pxh"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{iphone8OneVM.iphone8OneModel.txtMenghitungrumu}"
+            tools:text="@string/msg_menghitung_rumu" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnRumusKubus"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_94pxh"
+            android:layout_marginStart="@dimen/_94pxh"
+            android:layout_marginTop="@dimen/_117pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_9pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@string/lbl_rumus_kubus"
+            android:textAllCaps="false" style="@style/btnSolid_1" tools:text="@string/lbl_rumus_kubus"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnRumusBalok"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_94pxh"
+            android:layout_marginStart="@dimen/_94pxh"
+            android:layout_marginTop="@dimen/_56pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_9pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@string/lbl_rumus_balok"
+            android:textAllCaps="false" style="@style/btnSolid_1" tools:text="@string/lbl_rumus_balok"/>
+    </LinearLayout>
+</layout>

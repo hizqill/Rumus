@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="tampilanVM" type="com.faasapplication.app.modules.tampilan.data.viewmodel.TampilanVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearTampilan"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtGroupFive"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_20pxv"
+            android:paddingStart="@dimen/_23pxh"
+            android:paddingTop="@dimen/_26pxv" android:singleLine="true"
+            android:text="@{tampilanVM.tampilanModel.txtGroupFive}"
+            style="@style/txtSolid" tools:text="@string/lbl_rumus_kubus"/>
+        <ImageView android:id="@+id/imageRectangleTwo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_176pxh"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="@dimen/_239pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle2}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle2"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtPrice"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{tampilanVM.tampilanModel.txtPrice}"
+            style="@style/txtIntersemibold12" tools:text="@string/lbl_panjang_rusuk"/>
+        <View android:background="@color/indigo_A700"
+            android:id="@+id/lineLineOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_58pxv" android:layout_width="@dimen/_350pxh"/>
+        <LinearLayout android:id="@+id/linearColumnhitungLuas"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowhitungLuas"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnHitungLuas"
+                    android:layout_height="@dimen/_32pxv"
+                    android:layout_width="@dimen/_118pxh"
+                    android:paddingBottom="@dimen/_10pxv"
+                    android:paddingEnd="@dimen/_20pxh"
+                    android:paddingStart="@dimen/_16pxh"
+                    android:paddingTop="@dimen/_10pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_hitung_luas"
+                    android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/lbl_hitung_luas"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnHitungVolume"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_41pxh"
+                    android:layout_weight="0.52"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_10pxv"
+                    android:paddingEnd="@dimen/_11pxh"
+                    android:paddingStart="@dimen/_16pxh"
+                    android:paddingTop="@dimen/_10pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_hitung_volume"
+                    android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/lbl_hitung_volume"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtVOLUME"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_39pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{tampilanVM.tampilanModel.txtVOLUME}"
+                style="@style/txtIntersemibold12" tools:text="@string/lbl_volume"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtLUAS"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_30pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{tampilanVM.tampilanModel.txtLUAS}"
+                style="@style/txtIntersemibold12" tools:text="@string/lbl_luas"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
